@@ -1,0 +1,2 @@
+* i3
+** clipdel https//github.com/cdown/clipmenu/issues/57
