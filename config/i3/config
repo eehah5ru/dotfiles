@@ -255,11 +255,13 @@ for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [class=".uttercup"] floating enable
+for_window [class="Zeal"] floating enable
 
 exec compton --config ~/.config/i3/compton.conf -b
 exec albert
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 exec_always --no-startup-id /usr/bin/clipmenud &
+exec zeal
 
 for_window [class="^.*"] border pixel 2
 
@@ -282,3 +284,6 @@ bindsym $mod+Ctrl+c exec CM_LAUNCHER=rofi clipmenu && xdotool type --clearmodifi
 
 # buttercup password manager
 bindsym $mod+Shift+b exec buttercup
+
+# zeal
+# bindsym $mod+Ctrl+d exec zeal
